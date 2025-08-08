@@ -1,0 +1,4 @@
+{
+  "highContrast": { "charset": "@#%*+=-:. ", "fontSize": 6, "colorMode": "grayscale" },
+  "retro": { "charset": "█▓▒░ ", "fontSize": 8, "colorMode": "none" }
+}
