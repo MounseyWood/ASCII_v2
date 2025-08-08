@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASCII Art Converter</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>ASCII Art Converter</h1>
+    <div class="controls">
+      <label>Charset: <input type="text" id="charset" value="@%#*+=-:. " /></label>
+      <label>Font Size: <input type="range" id="fontSize" min="4" max="32" value="8" /></label>
+      <label>Color Mode: <select id="colorMode"><option value="none">None</option><option value="grayscale">Grayscale</option><option value="color">Color</option></select></label>
+      <label>Mask Color: <input type="color" id="maskColor" value="#000000" /></label>
+      <button id="loadImage">Load Image</button>
+      <input type="file" id="imageFile" accept="image/*" hidden />
+    </div>
+    <div id="outputWrapper">
+      <canvas id="maskCanvas"></canvas>
+      <pre id="asciiOutput"></pre>
+    </div>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
